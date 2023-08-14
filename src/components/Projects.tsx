@@ -3,11 +3,11 @@ import { HiArrowTopRightOnSquare } from "react-icons/hi2"
 export default function Projects() {
   const projects = [
     {
-      title: "Projeto 1",
-      description: "Descrição do projeto 1",
+      title: "Página de captura e venda Pâmela Maranhão",
+      description: "Página para captura de leads e venda de produtos digitais responsiva com formulário para envio de e-mail e integração com o Emailjs.",
       image:
-        "https://images.unsplash.com/photo-1487014679447-9f8336841d58?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1605&q=80",
-      link: "#",
+        "../assets/paginapamelamaranhao.jpg",
+      link: "portugalbypamela.com/",
       colSpan: "col-span-1",
     },
     {
