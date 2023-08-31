@@ -25,21 +25,20 @@ export default function Hero() {
 
             <p className="mb-6 text-center text-gray-400 md:text-left">
               Sou um desenvolvedor fullstack que ama criar coisas para a web.
-              Atualmente trabalho como Desenvolvedor Web júnior na R2 Tecnologia em Gestão,gosto de transformar ideias em sites e
+              Atualmente trabalho como Desenvolvedor Frontend Freelancer na Sm4rt Media Agência de Marketing,gosto de transformar ideias em sites e
               aplicações web.
             </p>
 
             <div className="flex items-center justify-center gap-2 md:justify-start">
               <a
-                href="#contact"
+                href="https://wa.me/5598981968622"
                 className="underline-thickness-2 font-bold text-white underline decoration-2 underline-offset-4 transition hover:decoration-blue-700"
               >
                 Fale comigo
               </a>
               <span className="italic text-gray-500">ou</span>
               <a
-                href="https://drive.google.com/file/d/15Ec245cWQny56xwvgqjsjWmoVap0_sog/view?usp=sharing"
-                download="CVFULLSTACKBERTOLDOKLINGER.pdf"
+                href="https://drive.google.com/file/d/1KO3655rJJECY-SgZMTL3uFEuS_feJxaf/view?usp=sharing"
                 target="_blank"
                 className="button flex items-center gap-2 text-gray-600 hover:text-gray-900"
               >

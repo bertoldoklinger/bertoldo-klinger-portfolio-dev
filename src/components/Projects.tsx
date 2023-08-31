@@ -6,8 +6,8 @@ export default function Projects() {
       title: "Página de captura e venda Pâmela Maranhão",
       description: "Página para captura de leads e venda de produtos digitais responsiva com formulário para envio de e-mail e integração com o Emailjs.",
       image:
-        "../assets/paginapamelamaranhao.jpg",
-      link: "portugalbypamela.com/",
+        "/public/paginapamelamaranhao.png",
+      link: "https://portugalbypamela.com/",
       colSpan: "col-span-1",
     },
     {
