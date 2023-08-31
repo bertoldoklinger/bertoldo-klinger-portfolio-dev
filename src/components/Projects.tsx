@@ -8,22 +8,22 @@ export default function Projects() {
       image:
         "/public/paginapamelamaranhao.png",
       link: "https://portugalbypamela.com/",
-      colSpan: "col-span-1",
+      colSpan: "col-span-2",
     },
     {
-      title: "Projeto 2",
-      description: "Descrição do projeto 2",
+      title: "FakeMeli",
+      description: "Projeto desenvolvido com React, Typescript e TailwindCSS, consumindo a API do Mercado Livre.",
       image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdlYnNpdGVzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+        "/public/fakemeli.png",
       link: "#",
-      colSpan: "col-span-1 md:col-span-2",
+      colSpan: "col-span-1 md:col-span-1",
     },
     {
-      title: "Projeto 3",
-      description: "Descrição do projeto 3",
+      title: "finance.ctrl",
+      description: "LandingPage e Aplicação Web desenvolvidos com HTML, CSS e Javascript onde é possível cadastrar e excluir transações e ver o saldo de entrada e saída.",
       image:
-        "https://media.istockphoto.com/id/1305995602/photo/responsive-floating-responsive-design.jpg?b=1&s=170667a&w=0&k=20&c=uFqBz27v_B0UxcslnvZxd9c0D9eJAef7veRZf6b-v-A=",
-      link: "#",
+        "/public/finance.ctrl.png",
+      link: "https://bertoldoklinger.github.io/finance.ctrl/",
       colSpan: "col-span-1",
     },
     {
@@ -73,7 +73,7 @@ export default function Projects() {
                   <h4 className="font-headline text-lg font-semibold">
                     {project.title}
                   </h4>
-                  <p className=" mb-4 text-sm">{project.description}</p>
+                  <p className=" mb-4 text-sm text-center">{project.description}</p>
                   <a href={project.link} target="_blank">
                     <HiArrowTopRightOnSquare className="h-6 w-6" />
                   </a>

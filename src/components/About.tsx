@@ -44,7 +44,7 @@ export function About() {
                       href="tel:+551299999999"
                       className="underline hover:text-blue-800"
                     >
-                      +55 (98) 9 981968622
+                      +55 (98) 981968622
                     </a>
                   </td>
                 </tr>
@@ -54,7 +54,7 @@ export function About() {
                   </td>
                   <td>
                     <a
-                      href="mailto:joao-test@testemail.com"
+                      href="mailto:bertoldokbrj@gmail.com"
                       className="underline hover:text-blue-800"
                     >
                       bertoldokbrj@gmail.com
