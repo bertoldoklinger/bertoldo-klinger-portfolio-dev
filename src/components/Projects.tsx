@@ -6,7 +6,7 @@ export default function Projects() {
       title: "Página de captura e venda Pâmela Maranhão",
       description: "Página para captura de leads e venda de produtos digitais responsiva com formulário para envio de e-mail e integração com o Emailjs.",
       image:
-        "/public/paginapamelamaranhao.png",
+        "/assets/paginapamelamaranhao.png",
       link: "https://portugalbypamela.com/",
       colSpan: "col-span-2",
     },
@@ -14,7 +14,7 @@ export default function Projects() {
       title: "FakeMeli",
       description: "Projeto desenvolvido com React, Typescript e TailwindCSS, consumindo a API do Mercado Livre.",
       image:
-        "/public/fakemeli.png",
+        "/assets/fakemeli.png",
       link: "#",
       colSpan: "col-span-1 md:col-span-1",
     },
@@ -22,21 +22,21 @@ export default function Projects() {
       title: "finance.ctrl",
       description: "LandingPage e Aplicação Web desenvolvidos com HTML, CSS e Javascript onde é possível cadastrar e excluir transações e ver o saldo de entrada e saída.",
       image:
-        "/public/finance.ctrl.png",
+        "/assets/finance.ctrl.png",
       link: "https://bertoldoklinger.github.io/finance.ctrl/",
       colSpan: "col-span-1",
     },
     {
-      title: "Projeto 4",
-      description: "Descrição do projeto 4",
+      title: "Em breve...",
+      description: "Em breve...",
       image:
         "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29kaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
       link: "#",
       colSpan: "col-span-1",
     },
     {
-      title: "Projeto 5",
-      description: "Descrição do projeto 5",
+      title: "Em breve...",
+      description: "Em breve...",
       image:
         "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW9iaWxlJTIwYXBwfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
       link: "#",
