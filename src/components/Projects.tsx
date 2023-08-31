@@ -15,7 +15,7 @@ export default function Projects() {
       description: "Projeto desenvolvido com React, Typescript e TailwindCSS, consumindo a API do Mercado Livre.",
       image:
         "/assets/fakemeli.png",
-      link: "#",
+      link: "https://fakemeli-frontend.vercel.app/",
       colSpan: "col-span-1 md:col-span-1",
     },
     {
