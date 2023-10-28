@@ -20,12 +20,12 @@ export default function Hero() {
 
             <h2 className="mb-6 flex items-center justify-center gap-2 font-semibold md:justify-start">
               <div className="h-1 w-12 rounded-full bg-blue-800" />
-              Desenvolvedor Fullstack React.js Node.js
+              Software Engineer Next.js Nest.js Golang
             </h2>
 
             <p className="mb-6 text-center text-gray-400 md:text-left">
               Sou um desenvolvedor fullstack que ama criar coisas para a web.
-              Atualmente trabalho como Desenvolvedor Frontend Freelancer na Sm4rt Media Agência de Marketing,gosto de transformar ideias em sites e
+              Atualmente trabalho como Software Engineer na Empresa Maranhense de Serviços Hospitalares(EMSERH),gosto de transformar ideias em sites e
               aplicações web.
             </p>
 
