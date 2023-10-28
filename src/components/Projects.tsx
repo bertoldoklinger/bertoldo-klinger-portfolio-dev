@@ -24,13 +24,21 @@ export default function Projects() {
       image:
         "/assets/finance.ctrl.png",
       link: "https://bertoldoklinger.github.io/finance.ctrl/",
+      colSpan: "col-span-3",
+    },
+    {
+      title: "Em breve...",
+      description: "Em breve...",
+      image:
+      "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW9iaWxlJTIwYXBwfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+      link: "#",
       colSpan: "col-span-1",
     },
     {
       title: "Em breve...",
       description: "Em breve...",
       image:
-        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29kaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29kaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
       link: "#",
       colSpan: "col-span-1",
     },

@@ -10,10 +10,10 @@ export default function Hero() {
               <span className="block font-handwriting text-3xl">
                 Olá, me chamo
               </span>
-              <span className="mr-2 font-headline text-5xl font-semibold">
+              <span className="mr-2 font-headline text-4xl md:text-5xl font-semibold">
                 Bertoldo
               </span>
-              <span className="font-headline text-5xl font-light text-blue-400">
+              <span className="font-headline text-4xl md:text-5xl font-light text-blue-400">
                 Klinger
               </span>
             </h1>
@@ -23,7 +23,7 @@ export default function Hero() {
               Software Engineer Next.js Nest.js Golang
             </h2>
 
-            <p className="mb-6 text-center text-gray-400 md:text-left">
+            <p className="mb-6 px-2 text-center text-gray-400 md:px-0 md:text-left">
               Sou um desenvolvedor fullstack que ama criar coisas para a web.
               Atualmente trabalho como Software Engineer na Empresa Maranhense de Serviços Hospitalares(EMSERH),gosto de transformar ideias em sites e
               aplicações web.
