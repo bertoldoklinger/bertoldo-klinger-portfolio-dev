@@ -3,13 +3,14 @@ import { HiArrowTopRightOnSquare } from "react-icons/hi2"
 export default function Projects() {
   const projects = [
     {
-      title: "Página de captura e venda Pâmela Maranhão",
-      description: "Página para captura de leads e venda de produtos digitais responsiva com formulário para envio de e-mail e integração com o Emailjs.",
+      title: "🍕 PizzaShop ",
+      description: "O pizza.shop Web é um aplicativo de entrega de comida construído com TypeScript, React, React-Query, TailwindCSS e Shadcn UI. Ele permite o gerenciamento de restaurantes, pedidos, menus e avaliações.",
       image:
-        "/assets/paginapamelamaranhao.png",
-      link: "https://portugalbypamela.com/",
+        "https://raw.githubusercontent.com/bertoldoklinger/pizzashop-web/main/docs/images/cover.png",
+      link: "#",
       colSpan: "col-span-2",
     },
+    ,
     {
       title: "FakeMeli",
       description: "Projeto desenvolvido com React, Typescript e TailwindCSS, consumindo a API do Mercado Livre.",
@@ -27,29 +28,30 @@ export default function Projects() {
       colSpan: "col-span-3",
     },
     {
-      title: "Em breve...",
-      description: "Em breve...",
+      title: "Sleepr - API de Reservas de Hotéis",
+      description: "Sistema de reserva de serviços implementado com microservices NestJS.implantação com CI/CD",
       image:
-      "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW9iaWxlJTIwYXBwfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
-      link: "#",
+        "https://ih1.redbubble.net/image.1084299836.8155/flat,750x1000,075,f.webp",
+      link: "https://github.com/bertoldoklinger/sleepr-microservices-nest",
       colSpan: "col-span-1",
     },
     {
-      title: "Em breve...",
-      description: "Em breve...",
+      title: "💳 CodePix",
+      description: "Codepix - Um simulador de Transações Pix usando Microservices, Nestjs, Golang, Nextjs e Kafka para mensa",
       image:
-      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29kaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
-      link: "#",
+        "https://miro.medium.com/v2/resize:fit:800/1*CASqCA5UISzNu9vsNvQ74w.jpeg",
+      link: "https://github.com/bertoldoklinger/codepix",
       colSpan: "col-span-1",
     },
     {
-      title: "Em breve...",
-      description: "Em breve...",
+      title: "Página de captura e venda Pâmela Maranhão",
+      description: "Página para captura de leads e venda de produtos digitais responsiva com formulário para envio de e-mail e integração com o Emailjs.",
       image:
-        "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW9iaWxlJTIwYXBwfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
-      link: "#",
+        "/assets/paginapamelamaranhao.png",
+      link: "https://portugalbypamela.com/",
       colSpan: "col-span-1",
     },
+
   ]
 
   return (
@@ -74,15 +76,15 @@ export default function Projects() {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className={`group relative h-52 cursor-default rounded-lg ${project.colSpan} bg-cover bg-center`}
-                style={{ backgroundImage: `url('${project.image}')` }}
+                className={`group relative h-52 cursor-default rounded-lg ${project?.colSpan} bg-cover bg-center`}
+                style={{ backgroundImage: `url('${project?.image}')` }}
               >
                 <div className="absolute inset-0 flex h-full w-full flex-col items-center justify-center rounded-lg bg-blue-600 text-white opacity-0 transition-opacity group-hover:opacity-100">
-                  <h4 className="font-headline text-lg font-semibold">
-                    {project.title}
+                  <h4 className="font-headline text-lg font-semibold text-center">
+                    {project?.title}
                   </h4>
-                  <p className=" mb-4 text-sm text-center px-2">{project.description}</p>
-                  <a href={project.link} target="_blank">
+                  <p className=" mb-4 text-sm text-center px-2">{project?.description}</p>
+                  <a href={project?.link} target="_blank">
                     <HiArrowTopRightOnSquare className="h-6 w-6" />
                   </a>
                 </div>
