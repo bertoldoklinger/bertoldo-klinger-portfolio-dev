@@ -20,13 +20,13 @@ export default function Hero() {
 
             <h2 className="mb-6 flex items-center justify-center gap-2 font-semibold md:justify-start">
               <div className="h-1 w-12 rounded-full bg-blue-800" />
-              Software Engineer Next.js Nest.js Golang
+              Software Engineer
             </h2>
 
             <p className="mb-6 px-2 text-center text-gray-400 md:px-0 md:text-left">
-              Sou um desenvolvedor fullstack que ama criar coisas para a web.
-              Atualmente trabalho como Software Engineer na Empresa Maranhense de Serviços Hospitalares(EMSERH),gosto de transformar ideias em sites e
-              aplicações web.
+              Como um entusiasta de desenvolvimento de software, tenho paixão por simplificar conceitos complexos e priorizo a criação de software de qualidade que agregue valor em cada entrega.
+
+              Com mais de 1 ano de experiência como desenvolvedor de software e 3 anos atuando na área de tecnologia, contribuí significativamente para o sucesso de equipes e projetos.
             </p>
 
             <div className="flex items-center justify-center gap-2 md:justify-start">

@@ -1,43 +1,24 @@
-import { HiAcademicCap, HiCodeBracketSquare } from "react-icons/hi2"
+import { HiAcademicCap } from "react-icons/hi2"
 
 export default function Skills() {
   const educations = [
     {
-      name: "Curso NodeJs Avançado com TDD, Clean Architecture e Typescript | Rodrigo Manguinho",
+      name: "Construindo Aplicações Enterprise com Node.js | TechLeads Club",
     },
     {
-      name: "Curso Ignite Nodejs  | Rocketseat",  
+      name: "Método TAJS | Erick Wendel",
     },
     {
-      name: "Curso Ignite React Native | Rocketseat",  
+      name: "NodeJs Avançado com TDD, Clean Architecture e Typescript | Rodrigo Manguinho",
     },
     {
-      name: "Curso Ignite Reactjs  | Rocketseat",  
+      name: "Ignite Nodejs  | Rocketseat",
+    },
+    {
+      name: "NestJS Microservices: Build & Deploy a Scaleable Backend | Michael Guay",
     },
   ]
 
-  const skills = [
-    {
-      name: "HTML5/CSS3",
-      icon: "html.svg",
-      level: 95,
-    },
-    {
-      name: "JavaScript",
-      icon: "javascript.svg",
-      level: 90,
-    },
-    {
-      name: "React.js",
-      icon: "react.svg",
-      level: 85,
-    },
-    {
-      name: "Node.js",
-      icon: "nodejs.svg",
-      level: 65,
-    },
-  ]
 
   return (
     <section className="rounded-br-[80px] bg-gray-300 md:rounded-br-[180px]">
@@ -52,8 +33,8 @@ export default function Skills() {
             </span>
           </h2>
           <p className="relative text-sm text-gray-700">
-            Desenvolvedor Fullstack | React.js | React Native | Node.js | TypeScript
-            | JavaScript
+            Software Engineer | React | Node.js | TypeScript
+            | Docker | TDD | AWS
           </p>
           <div className="absolute left-1/2 top-3 z-0 h-10 w-10 rounded-lg bg-blue-400/10" />
         </div>
@@ -73,38 +54,6 @@ export default function Skills() {
                 {education.name}
               </div>
             ))}
-          </div>
-          <div className="basis-1/2">
-            <h3 className="mb-4 flex items-center gap-2 text-lg font-extrabold text-gray-700">
-              <HiCodeBracketSquare className="h-8 w-8 text-blue-600" />
-              Skills
-            </h3>
-
-            <div className="grid grid-cols-1 gap-4 font-semibold md:grid-cols-2">
-              {skills.map((skill, index) => (
-                <div
-                  key={`skill-${index}`}
-                  className="flex flex-row items-center gap-2 md:flex-col md:items-start"
-                >
-                  <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-white p-2">
-                    <img
-                      src={skill.icon}
-                      alt={skill.name}
-                      className="h-10 w-10 rounded"
-                    />
-                  </div>
-                  <div className="w-full flex-grow">
-                    <h4 className="font-headlin text-gray-900">{skill.name}</h4>
-                    <div className="h-2.5 w-full rounded-full bg-white">
-                      <div
-                        className="h-2.5 rounded-full bg-blue-600"
-                        style={{ width: `${skill.level}%` }}
-                      ></div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </div>
