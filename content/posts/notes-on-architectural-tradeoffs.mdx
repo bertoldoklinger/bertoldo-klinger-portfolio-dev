@@ -1,0 +1,57 @@
+---
+title: "Notes on the first law of software architecture"
+description: "Reading Fundamentals of Software Architecture by Mark Richards and Neal Ford. Why 'it depends' is the most honest answer in this discipline, and how to give it without sounding lazy."
+publishedAt: "2026-05-17"
+---
+
+I'm working through *Fundamentals of Software Architecture* this month. The first chapter opens with what the authors call **the first law of software architecture**:
+
+> Everything in software architecture is a trade-off.
+
+It's a familiar idea, but the book frames it sharply: the moment something stops being a trade-off, it stops being architecture. Picking React over Vue is a tooling choice. Picking event-driven over synchronous request/response — and accepting eventual consistency, harder debugging, and operational overhead in exchange for decoupling and resilience — is architecture.
+
+## Why "it depends" is not a cop-out
+
+The book's second law is closely related: **why is more important than how**. Every architectural decision should produce, at minimum, a paragraph explaining the trade-offs you accepted. Not the diagram. The trade-off log.
+
+In practice this is what an Architecture Decision Record (ADR) is for. A short, dated document with three sections:
+
+- **Context** — what was true when the decision was made
+- **Decision** — what we chose
+- **Consequences** — what we accepted in exchange
+
+The consequences section is the one most teams skip. It's also the only one that pays interest later, when someone asks "why did we build it this way?" two years from now.
+
+## A concrete example from my own stack
+
+When a new bounded context comes up at work, the default question we used to ask was "service or module?". Reading the book reframed it for me: what *characteristics* are we optimizing for?
+
+- **Operational simplicity** → modular monolith. One deploy pipeline, one runtime, one database. Easier on a small team.
+- **Independent scalability** → service. Each piece scales on its own metrics, deploys on its own cadence.
+- **Fault isolation** → service, *if* we accept the network as a new failure mode.
+- **Speed of change** → modular monolith, until ownership boundaries make merges painful.
+
+There is no answer that's correct in isolation. The honest answer is: *"given our team size, deploy frequency, and SLA, here is what we're optimizing for — and here is what we're giving up."*
+
+## Architecture characteristics as a contract
+
+The book turns the fuzzy "ilities" into a concrete deliverable: a list of **architecture characteristics** ranked by priority, agreed with the business.
+
+Picking three matters more than listing fifteen. The classic example:
+
+```text
+scalability ←→ performance ←→ availability
+```
+
+These three are not free of each other. Caching helps two and complicates the third. Database replication helps two and complicates the third. You can't optimize them all at once, so you have to name the order.
+
+That ranking is the contract. When a future feature pushes against the lowest-ranked characteristic, you know in advance that you're allowed to compromise it. When it pushes against the top-ranked one, you stop and renegotiate.
+
+## Takeaway
+
+Two things I'm taking with me from this chapter:
+
+1. Treat the trade-off paragraph as the deliverable. The diagram is a side effect.
+2. Force a ranking of architecture characteristics early. "All of them" is a non-answer.
+
+There's a longer chapter on architecture characteristics coming up in the book. I'll come back when I've worked through it.

@@ -55,6 +55,7 @@ export default async function BlogPostPage({
             year: "numeric",
             month: "long",
             day: "numeric",
+            timeZone: "UTC",
           })}
         </p>
         <h1 className="mt-3 text-balance text-3xl font-medium tracking-tight md:text-4xl">
@@ -65,7 +66,7 @@ export default async function BlogPostPage({
         </p>
       </header>
 
-      <div className="prose prose-invert mt-10 max-w-none">
+      <div className="prose prose-portfolio mt-10 max-w-none">
         <MDXRemote source={post.body} />
       </div>
     </article>

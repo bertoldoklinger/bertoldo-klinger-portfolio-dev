@@ -66,6 +66,7 @@ function BlogList({
                     year: "numeric",
                     month: "short",
                     day: "numeric",
+                    timeZone: "UTC",
                   })}
                 </p>
                 <h2 className="text-base font-medium tracking-tight text-foreground transition-opacity group-hover:opacity-80">
