@@ -1,0 +1,100 @@
+# Bertoldo Klinger — Portfolio · Cursor Rules
+
+You are working on a personal portfolio for Bertoldo Klinger, a Software Engineer.
+The site is intentionally minimalist, internationalized (EN/PT), and inspired by
+Raycast / Vercel / Resend / Blindpay. Optimize for clarity, restraint, and speed.
+
+## Stack (do not change without explicit request)
+
+- Next.js 16 (App Router, Turbopack default, React 19.2)
+- TypeScript (strict)
+- Tailwind CSS v4 (CSS-first config via `@theme` in `src/app/globals.css`)
+- shadcn/ui (components copied into `src/components/ui/*`, not a runtime dep)
+- next-intl 4 for i18n (default locale `en`, also `pt`)
+- Framer Motion for animations
+- next-themes for theme toggling (default `dark`)
+- cmdk for the command palette
+- @next/mdx + next-mdx-remote-client for blog posts in `content/posts/*.mdx`
+- @vercel/og for dynamic Open Graph images
+- Vercel Analytics + Speed Insights
+- Geist Sans + Geist Mono via the `geist` package
+- pnpm package manager (no npm/yarn)
+
+## Architecture
+
+- Server Components by default. Add `"use client"` only when you need browser APIs,
+  state, effects, or event handlers.
+- Routing layout: `src/app/[locale]/...`. Root layout lives there. Default locale is
+  not prefixed in the URL (`localePrefix: "as-needed"`).
+- Source of truth for data: `src/lib/data/{site,experience,projects,stack}.ts`.
+  Never hard-code copy that belongs in those files.
+- All UI strings come from `messages/{en,pt}.json` via `useTranslations` /
+  `getTranslations`. The two files MUST share the same key tree.
+- Use `Link`, `useRouter`, `usePathname` from `@/i18n/navigation`, never directly
+  from `next/link` or `next/navigation` (so locale routing keeps working).
+- Use `cn` from `@/lib/utils` for class merging. Use `formatMonthYear` for dates.
+
+## Code style
+
+- No `any`. No non-null assertion (`!`). No type assertions (`as Type`) unless the
+  type is genuinely unknowable (e.g. JSON parsed from a dictionary keyed by a union).
+- Prefer `type` over `interface` for plain object shapes.
+- Imports stay at the top of the file. No inline imports.
+- Exhaustive `switch` over union types; let TS catch missing branches.
+- Prefer small, composable components. If a section grows past ~150 lines, split it.
+- Avoid comments that narrate code. Keep comments only for non-obvious intent.
+
+## Design system
+
+- Colors: tokens in `globals.css` under `:root` and `.dark`. Use semantic class names
+  (`bg-background`, `text-muted-foreground`, `border-border`) — do not reach for
+  raw `gray-*` or `zinc-*`.
+- Borders are hairline (`border` with `--border` at ~8% opacity).
+- The accent color is `--brand` (cool blue). Use sparingly — most UI is monochrome.
+- Typography: Geist Sans for prose, Geist Mono for metadata, dates, kbd, eyebrows.
+- Use `text-balance` and `text-pretty` utilities for headings and prose.
+- Animations: respect `prefers-reduced-motion` (already handled globally + via
+  `useReducedMotion` from Framer Motion). Keep durations between 200–500ms.
+- No drop shadows, no large gradients, no playful flourishes (no handwriting fonts).
+
+## Accessibility
+
+- Every interactive element must have an accessible name (`aria-label`, visible text,
+  or `title`). Toggles use both visible icon and `aria-label`.
+- Respect `prefers-reduced-motion` — if you add new animations, gate them on
+  `useReducedMotion()` or scope them inside `@media (prefers-reduced-motion: no-preference)`.
+- Keyboard: ⌘K opens the command palette globally. Don't add competing global hotkeys.
+
+## i18n rules
+
+- Adding a new key requires updating BOTH `en.json` and `pt.json` in the same commit.
+- Don't translate code identifiers, brand names (CarltonOne, Sanar, EMSERH), or stack
+  items (TypeScript, NestJS). Translate only natural language.
+- Date formatting goes through `Intl.DateTimeFormat` with the active locale.
+
+## Content positioning
+
+- Bertoldo is positioned as a **Software Engineer** — not as "AI-native engineer",
+  not as a freelancer. AI-assisted dev (Cursor, Claude Code, MCP) is a tool listed
+  in the Stack section, never the headline.
+- Tone: technical, sober, confident, international.
+- Do NOT add: WhatsApp, age, phone tables, Services section, Testimonials,
+  contact forms, EmailJS, Resend, or any backend mailer. Contact is links-only
+  (mailto, LinkedIn, GitHub, copy-email).
+- Education section was deliberately removed. Don't add it back without explicit
+  user request.
+
+## Commits & PRs
+
+- Conventional commits in English, concise and objective. Examples:
+  - `feat(timeline): add scroll-driven progress line`
+  - `fix(i18n): correct PT keys for stack groups`
+  - `chore(deps): bump next to 16.2.7`
+- Never include AI attribution (no "Co-authored-by: Claude", no "🤖 Generated with").
+- Branch naming: `feat/<scope>`, `fix/<scope>`, `chore/<scope>`.
+
+## Before adding components
+
+- Check `src/components/ui/` first. If shadcn already provides a primitive, use it
+  via `pnpm dlx shadcn@latest add <component>`.
+- Don't introduce a new dependency for something a few lines of TS/CSS can handle.

@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "title": "Bertoldo Klinger — Engenheiro de Software",
+    "description": "Engenheiro de software focado em construir sistemas web escaláveis e serviços distribuídos resilientes na AWS. Atualmente na CarltonOne, remoto do Brasil."
+  },
+  "nav": {
+    "home": "Início",
+    "blog": "Blog",
+    "projects": "Projetos",
+    "openCommandPalette": "Abrir command palette",
+    "toggleTheme": "Alternar tema",
+    "toggleLanguage": "Trocar idioma"
+  },
+  "hero": {
+    "name": "Bertoldo Klinger",
+    "title": "Engenheiro de Software",
+    "tagline": "Construindo sistemas distribuídos confiáveis e interfaces de produto.",
+    "currentlyAt": "Atualmente na",
+    "company": "CarltonOne",
+    "remoteFrom": "Remoto do Brasil",
+    "primaryCta": "Falar comigo",
+    "secondaryCta": "Ver trabalhos"
+  },
+  "about": {
+    "eyebrow": "Sobre",
+    "heading": "Engenheiro focado em confiabilidade e ritmo.",
+    "body": "Construo sistemas web escaláveis e serviços distribuídos resilientes na AWS — TypeScript, NestJS, Postgres, Redis — com observabilidade (OpenTelemetry, SigNoz) e padrões de resiliência (circuit breakers, retries) incorporados. Aplico fluxos de desenvolvimento assistido por IA (Cursor, Claude Code, MCP) pra entregar mais rápido sem comprometer a integridade arquitetural.",
+    "highlight": "Contribuições recentes ajudaram a alcançar um NPS histórico de 79."
+  },
+  "timeline": {
+    "eyebrow": "Carreira",
+    "heading": "Onde estive, onde estou.",
+    "present": "Presente",
+    "now": "Agora",
+    "remote": "Remoto",
+    "location": {
+      "ontarioCanada": "Ontário, Canadá",
+      "saoLuisBrazil": "São Luís, Brasil",
+      "brazil": "Brasil"
+    },
+    "stack": "Stack"
+  },
+  "projects": {
+    "eyebrow": "Trabalhos selecionados",
+    "heading": "Projetos",
+    "viewProject": "Ver projeto",
+    "viewSource": "Ver código"
+  },
+  "stack": {
+    "eyebrow": "Stack",
+    "heading": "Ferramentas que uso.",
+    "groups": {
+      "languages": "Linguagens",
+      "backend": "Backend",
+      "cloud": "Cloud & DevOps",
+      "data": "Dados",
+      "observability": "Observabilidade & resiliência",
+      "ai": "Ferramentas de IA",
+      "testing": "Testes",
+      "certifications": "Certificações"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contato",
+    "heading": "Vamos conversar.",
+    "body": "Melhor por email ou LinkedIn. Estou sempre aberto a boas conversas sobre sistemas distribuídos, AWS e engenharia com IA.",
+    "copyEmail": "Copiar email",
+    "emailCopied": "Copiado",
+    "openEmail": "Enviar email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "commandPalette": {
+    "placeholder": "Digite um comando ou pesquise...",
+    "empty": "Nenhum resultado encontrado.",
+    "groups": {
+      "navigate": "Navegar",
+      "general": "Geral",
+      "links": "Links",
+      "copy": "Copiar"
+    },
+    "items": {
+      "home": "Ir para início",
+      "blog": "Ir para blog",
+      "projects": "Ir para projetos",
+      "toggleTheme": "Alternar tema",
+      "switchLanguage": "Mudar para inglês",
+      "linkedin": "Abrir LinkedIn",
+      "github": "Abrir GitHub",
+      "email": "Enviar email",
+      "copyEmail": "Copiar email"
+    }
+  },
+  "blog": {
+    "title": "Escritos",
+    "description": "Notas sobre engenharia, sistemas distribuídos e ofício.",
+    "empty": "Nada por aqui ainda. Volte em breve.",
+    "backToBlog": "Voltar pra escritos",
+    "publishedOn": "Publicado em"
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados.",
+    "builtWith": "Feito com Next.js, hospedado na Vercel."
+  }
+}

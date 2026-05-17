@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "title": "Bertoldo Klinger — Software Engineer",
+    "description": "Software engineer focused on building scalable web systems and resilient distributed services on AWS. Currently at CarltonOne, remote from Brazil."
+  },
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "projects": "Projects",
+    "openCommandPalette": "Open command palette",
+    "toggleTheme": "Toggle theme",
+    "toggleLanguage": "Switch language"
+  },
+  "hero": {
+    "name": "Bertoldo Klinger",
+    "title": "Software Engineer",
+    "tagline": "Building reliable distributed systems and product UIs.",
+    "currentlyAt": "Currently at",
+    "company": "CarltonOne",
+    "remoteFrom": "Remote from Brazil",
+    "primaryCta": "Get in touch",
+    "secondaryCta": "View work"
+  },
+  "about": {
+    "eyebrow": "About",
+    "heading": "Engineer focused on reliability and pace.",
+    "body": "I build scalable web systems and resilient distributed services on AWS — TypeScript, NestJS, Postgres, Redis — with observability (OpenTelemetry, SigNoz) and resilience patterns (circuit breakers, retries) baked in. I leverage modern AI-assisted dev workflows (Cursor, Claude Code, MCP) to ship faster without compromising architectural integrity.",
+    "highlight": "Recent work contributed to a historical NPS of 79."
+  },
+  "timeline": {
+    "eyebrow": "Career",
+    "heading": "Where I've been, where I am.",
+    "present": "Present",
+    "now": "Now",
+    "remote": "Remote",
+    "location": {
+      "ontarioCanada": "Ontario, Canada",
+      "saoLuisBrazil": "São Luís, Brazil",
+      "brazil": "Brazil"
+    },
+    "stack": "Stack"
+  },
+  "projects": {
+    "eyebrow": "Selected work",
+    "heading": "Projects",
+    "viewProject": "View project",
+    "viewSource": "View source"
+  },
+  "stack": {
+    "eyebrow": "Stack",
+    "heading": "Tools I reach for.",
+    "groups": {
+      "languages": "Languages",
+      "backend": "Backend",
+      "cloud": "Cloud & DevOps",
+      "data": "Data",
+      "observability": "Observability & resilience",
+      "ai": "AI dev tools",
+      "testing": "Testing",
+      "certifications": "Certifications"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Let's talk.",
+    "body": "Best reached by email or LinkedIn. I'm always open to interesting conversations about distributed systems, AWS, and engineering with AI.",
+    "copyEmail": "Copy email",
+    "emailCopied": "Copied",
+    "openEmail": "Email me",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "commandPalette": {
+    "placeholder": "Type a command or search...",
+    "empty": "No results found.",
+    "groups": {
+      "navigate": "Navigate",
+      "general": "General",
+      "links": "Links",
+      "copy": "Copy"
+    },
+    "items": {
+      "home": "Go home",
+      "blog": "Go to blog",
+      "projects": "Go to projects",
+      "toggleTheme": "Toggle theme",
+      "switchLanguage": "Switch to Portuguese",
+      "linkedin": "Open LinkedIn",
+      "github": "Open GitHub",
+      "email": "Send email",
+      "copyEmail": "Copy email address"
+    }
+  },
+  "blog": {
+    "title": "Writing",
+    "description": "Notes on engineering, distributed systems, and the craft.",
+    "empty": "Nothing here yet. Check back soon.",
+    "backToBlog": "Back to writing",
+    "publishedOn": "Published"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Next.js, deployed on Vercel."
+  }
+}
